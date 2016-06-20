@@ -1,0 +1,5 @@
+RewriteBase /public/
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-e
+RewriteRule ^ index.php [QSA,L]
